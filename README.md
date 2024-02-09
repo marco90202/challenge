@@ -1,13 +1,13 @@
 # Este proyecto fue desarrollado con Reactjs y desplegado en Heroku
 
-Esta microapp se creo con `Typescript` y contiene la librerias de `Axios`, `Material-UI`, `react-router-dom`
+Esta microapp se creo con `jsx` y contiene la librerias de `Axios`, `Material-UI`, `react-router-dom`
 
 ## Disposicion de Componentes es la siguiente:
 
 Desde [App] se llama a [Home] y luego [Step1], [Step2], [Step3]
 
 Tambien contiene las Funciones de Apoyo dentro de la carpeta [/utils] que contiene 
-la funcion post(Axios) y validateInput para permitir solo numeros en los input
+la funcion get(Axios) y validateInput para permitir solo numeros en los input
 
 ### `Componente Home`
 
@@ -23,11 +23,11 @@ la funcion post(Axios) y validateInput para permitir solo numeros en los input
 
 ### `Componente Step1`
 
-    En este componente se hizo la maquetación inicial de los recursos de Material-UI para desktop y se reciben los props enviados de Home y se realizan las validaciones para los inputs
+    En este componente se hizo la maquetación inicial de los recursos de Material-UI para desktop y se reciben los props enviados de Home, se realizan las validaciones para los inputs y se llama al servicio /users
 
 ### `Componente Step2`
 
-    En este componente se hizo la maquetación del segundo Step utilizando tambien los recursos de Material-UI como por ejemplo Stepper ademas de pintar los valores del state formValues 
+    En este componente se hizo la maquetación del segundo Step se muestran los planes con la validaciones indicadas, ademas que al seleccionar un plan se llama al servicio /plans
 
 ### `Componente Step3`
 
@@ -36,7 +36,5 @@ la funcion post(Axios) y validateInput para permitir solo numeros en los input
 
 ## Pendientes
 
-    - Vista responsive para moviles
-    - Terminar Step2
+
     - Realizar maquetacion de Step3
-    - Implementacion de Sass
